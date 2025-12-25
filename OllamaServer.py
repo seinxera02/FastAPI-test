@@ -24,7 +24,7 @@ class Question(BaseModel):
 async def ask_question(question: Question):
     ollama_payload = {
         "model": "qwen2.5:1.5b",
-        "prompt": question.message,
+        "prompt": "Sujal is a boy who is currently doing Bachelors in Computer Science."+question.message,
         "stream": False
     }
 
