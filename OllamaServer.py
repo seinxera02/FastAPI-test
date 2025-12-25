@@ -57,5 +57,6 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="0.0.0.0",  # VERY IMPORTANT
-        port=8000
+        port=8000,
+        reload=True  # ← Add this for auto-reload
     )
